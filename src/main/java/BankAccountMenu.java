@@ -14,10 +14,10 @@ public class BankAccountMenu {
         Scanner sc = new Scanner(System.in);
 
         boolean running = true;
+        double balance = 0.0;
         while (running) {
             System.out.print("----Bank Account Menu----\n1. Add money\n2. Withdraw money\n3.Check balance\n4. Exit\n");
             int choice = sc.nextInt();
-            double balance = 0.0;
             switch (choice)
             {
                 case 1:
