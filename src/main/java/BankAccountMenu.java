@@ -24,7 +24,15 @@ public class BankAccountMenu {
                     System.out.print("Enter amount to add: ");
                     double add = sc.nextDouble();
                     System.out.println("Added $" + add);
-                    balance += add;
+                    if (add>=0)
+                    {
+                        balance += add;
+                    }
+                    else
+                    {
+                        System.out.println("Cannot add negative numbers.");
+                        break;
+                    }
                     System.out.println("New balance: $" + balance);
                     System.out.print("\n");
                     break;
